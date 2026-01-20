@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Sakshi 💗</title>
+
+<!-- PASSWORD PROMPT (PURANA WALA) -->
+<script>
+    var password = "sakshi123";
+    var userPassword = prompt("Enter password to open this diary 💗");
+
+    if (userPassword !== password) {
+        alert("Wrong password ❌");
+        document.body.innerHTML = "";
+    }
+</script>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    font-family:"Segoe UI",sans-serif;
+    background:linear-gradient(to bottom,#ffd6e0,#fff);
+    overflow-x:hidden;
+}
+
+/* FLOATING HEART EFFECT */
+.heart{
+    position:fixed;
+    bottom:-20px;
+    color:#ff4d6d;
+    font-size:20px;
+    animation:floatUp 6s linear infinite;
+    opacity:0.8;
+    z-index:1;
+}
+
+@keyframes floatUp{
+    0%{transform:translateY(0) scale(1);opacity:1;}
+    100%{transform:translateY(-100vh) scale(1.8);opacity:0;}
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:25px;
+    position:relative;
+    z-index:2;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+p{
+    font-size:18px;
+    line-height:1.8;
+    color:#333;
+    margin-bottom:18px;
+}
+
+.top-note{
+    background:#fff0f5;
+    border-left:5px solid #ff4d6d;
+    padding:15px;
+    border-radius:10px;
+    font-size:16px;
+    max-width:650px;
+    margin:20px auto 35px;
+    text-align:center;
+}
+
+.footer{
+    text-align:center;
+    margin-top:30px;
+    font-size:14px;
+    color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEART SCRIPT -->
+<script>
+function createHeart(){
+    const heart=document.createElement("div");
+    heart.className="heart";
+    heart.innerHTML="❤️";
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.fontSize=(15+Math.random()*25)+"px";
+    document.body.appendChild(heart);
+    setTimeout(()=>heart.remove(),6000);
+}
+setInterval(createHeart,500);
+</script>
+
+<div class="container">
+<div class="card">
+
+<div style="text-align:center;">
+    <h2 style="font-size:36px;font-weight:bold;color:#ff4d6d;">
+        Best friendss momentsss
+    </h2>
+    <h3 style="font-size:20px;color:#555;">
+        This is our personal diary
+    </h3>
+</div>
+
+<div class="top-note">
+    tu jab chahe isse dekh sakti he,<br>
+    me time time par isme cheeje add krta jaunga 💗
+</div>
+
+<h1 style="text-align:center;color:#ff4d6d;">
+    Sakshiii Sakshiii Sakshiiiiii 💗
+</h1>
+
+<p>Me tujhe ptaa nhi kese thank you boluuu par me start krta huu.......</p>
+
+<p>
+Thank you itna achha gift dene ke liye ye meri life ka best gift he..
+me isse humesha apne pass sambhal ke rakhungaaaaa
+</p>
+
+<p>
+Tune itne pyaar se jo banayaaa heee mujhe terii mehnat bohot pasand aayiiii....
+</p>
+
+<p>
+Mere liye itna sab kuch krne ke liye dher saara thank youuu.... 👀
+</p>
+
+<p>
+Usme ek diary bhi hee jisme mere baare me bohot saari achhi achhi baate likhi heee.
+Mujhe wo sab padhke bohot achha lagaaaa
+</p>
+
+<p>
+Ki chalo koi to hai jo mere baare me sochta he
+nii to merese to sab matlab ke liye hi jude hue he
+</p>
+
+<p>
+Par sirf tu hi ek haiii jisko mujhse itnaa saara lagaav haiii
+</p>
+
+<p>
+Me teriii life ka ptaa nhi best part hu kii nhiii
+par tuu merii lifeee kii wo best pal heeee
+jisme merii jindgi puri change krdiii
+</p>
+
+<p>
+Ye 2 saal tere sath kab nikal gye mujhe ptaa hi ni chala....
+terii sath ki hui mastiii, majak sab mujhe humesha yaad rahega
+</p>
+
+<p>
+Tere sath hotaa hu toh me meri life ki saari tension bhul jaata hu
+kisi cheej ka dar ni rehta
+tu mera comfort zone he
+</p>
+
+<p>
+Tuu meri wo personal diary hee jiskii baate koi ni padh sakta heeee
+me chahe usse kuch bhi btaa duuu....
+</p>
+
+<p>
+Esa ek pal ni he jab me tere baare me naa sochuuu
+copy se leke book tak har cheej me teri memories hee
+</p>
+
+<p>
+Chahe wo tera diya hua pen hoo
+yaa teraa diya hua hair band 🙃
+</p>
+
+<p>
+Tu har jagah he meri life meee
+subah uthte se raat ko sote tak tere notification milte hee
+</p>
+
+<p>
+Isliye ye website bana raha hu
+jisme me time time pe moments add karta rahungaaa
+</p>
+
+<p>
+Jab bhi tujhe lage
+tu yaha aake apne dost ko yaad kr saktiii 💗
+</p>
+
+<div class="footer">Always for you.</div>
+
+</div>
+</div>
+
+</body>
+</html>
