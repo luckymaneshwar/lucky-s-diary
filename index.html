@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+
+<!-- ✅ MOBILE ZOOM FIX -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Best friendss momentsss</title>
 
 <style>
@@ -76,7 +80,7 @@ h3 {
   margin-bottom: 30px;
 }
 
-/* HEARTS */
+/* ❤️ HEARTS */
 .heart {
   position: fixed;
   bottom: -10px;
@@ -94,12 +98,36 @@ h3 {
     opacity: 0;
   }
 }
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .lock-box {
+    width: 85%;
+  }
+}
+
+/* 💻 DESKTOP */
+@media (min-width: 768px) {
+  .container {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+  }
+}
 </style>
 </head>
 
 <body>
 
-<!-- LOCK -->
+<!-- 🔐 LOCK -->
 <div id="lockScreen">
   <div class="lock-box">
     <h2>🔐 Private Diary</h2>
@@ -115,11 +143,11 @@ function unlock() {
   if (document.getElementById("pass").value === "sakshi123") {
     document.getElementById("lockScreen").style.display = "none";
   } else {
-    document.getElementById("error").innerText = "You're not my friend💔";
+    document.getElementById("error").innerText = "You're not my friend 💔";
   }
 }
 
-// hearts
+// ❤️ hearts animation
 setInterval(() => {
   const heart = document.createElement("div");
   heart.className = "heart";
@@ -130,7 +158,7 @@ setInterval(() => {
 }, 500);
 </script>
 
-<!-- CONTENT -->
+<!-- 📖 CONTENT -->
 <div class="container">
   <h1><b>Best friendss momentsss💗🫠</b></h1>
   <h3>This is our personal diary</h3>
@@ -171,12 +199,17 @@ Subah uthte se raat ko sote tak meko tere notification dekhne ko milte hee<br><b
 
 Jab bhi tujhe lagega tu isse padhke apne dost ko yaad kr saktiii 💗
   </p>
-<p> 🗓️ 20 jan 2026 
-Aaj mai school nhi gya hu mera english ka paper thaa or me gya ni hu maine sakshi ko bhi late bataya ki mai nhi aa rha huu 
 
-Pehle bta dena chahiye thaa par chalo koi baat nhii aaj kuch special nhi huaa bass mai papa ke sath bahar gya thaa or subah se is website banane pe hi kaam kr rha huu.... 
+  <p>
+🗓️ 20 jan 2026 <br>
+Aaj mai school nhi gya hu mera english ka paper thaa or me gya ni hu maine sakshi ko bhi late bataya ki mai nhi aa rha huu <br><br>
+
+Pehle bta dena chahiye thaa par chalo koi baat nhii aaj kuch special nhi huaa bass mai papa ke sath bahar gya thaa or subah se is website banane pe hi kaam kr rha huu.... <br>
 Finally itni mehnat or dimaag khapane ke baad maine isse bana liya hee..💁
 </p>
+
+<div class="footer">I'm always here for you.</div>
+
 </div>
 
 </body>
