@@ -3,20 +3,27 @@
 <head>
 <meta charset="UTF-8">
 
-<!-- ✅ MOBILE ZOOM FIX -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 🔥 STRONG VIEWPORT -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
 <title>Best friendss momentsss</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #ffe6f0;
-  overflow-x: hidden;
+/* 🌐 GLOBAL FIX */
+* {
+  box-sizing: border-box;
 }
 
-/* LOCK SCREEN */
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background: #ffe6f0;
+}
+
+/* 🔐 LOCK SCREEN */
 #lockScreen {
   position: fixed;
   inset: 0;
@@ -29,25 +36,22 @@ body {
 
 .lock-box {
   background: white;
-  padding: 30px;
+  padding: 25px;
   border-radius: 15px;
   text-align: center;
   width: 90%;
-  max-width: 350px;
+  max-width: 340px;
 }
 
-.lock-box input {
+.lock-box input,
+.lock-box button {
   width: 100%;
   padding: 10px;
-  margin-top: 10px;
   font-size: 16px;
 }
 
 .lock-box button {
   margin-top: 15px;
-  padding: 10px;
-  width: 100%;
-  font-size: 16px;
   background: #ff4d6d;
   color: white;
   border: none;
@@ -59,14 +63,24 @@ body {
   margin-top: 10px;
 }
 
-/* CONTENT */
+/* 📖 CONTENT */
 .container {
+  width: 100%;
+  max-width: 100%;
   padding: 20px;
+}
+
+/* TEXT FIX */
+p {
+  font-size: 15px;
+  line-height: 1.7;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 h1 {
   text-align: center;
-  font-size: 32px;
+  font-size: 26px;
 }
 
 h3 {
@@ -89,38 +103,30 @@ h3 {
 }
 
 @keyframes floatUp {
-  from {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateY(-100vh);
-    opacity: 0;
-  }
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(-100vh); opacity: 0; }
 }
 
-/* 📱 MOBILE RESPONSIVE */
-@media (max-width: 600px) {
-  body {
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 26px;
-  }
-
-  .lock-box {
-    width: 85%;
-  }
-}
-
-/* 💻 DESKTOP */
+/* 💻 DESKTOP ONLY */
 @media (min-width: 768px) {
   .container {
     max-width: 800px;
     margin: auto;
-    font-size: 18px;
   }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  font-style: italic;
 }
 </style>
 </head>
@@ -147,7 +153,7 @@ function unlock() {
   }
 }
 
-// ❤️ hearts animation
+// ❤️ hearts
 setInterval(() => {
   const heart = document.createElement("div");
   heart.className = "heart";
@@ -160,56 +166,43 @@ setInterval(() => {
 
 <!-- 📖 CONTENT -->
 <div class="container">
-  <h1><b>Best friendss momentsss💗🫠</b></h1>
-  <h3>This is our personal diary</h3>
+<h1>Best friendss momentsss💗🫠</h1>
+<h3>This is our personal diary</h3>
 
-  <p class="note">
-    tu jab chahe isse dekh sakti he  
-    me time time par isme cheeje add krta jaunga
-  </p>
+<p class="note">
+tu jab chahe isse dekh sakti he  
+me time time par isme cheeje add krta jaunga
+</p>
 
-  <p>
+<p>
 Sakshiii sakshiii sakshiiiiii.....💗<br><br>
-
 Me tujhe ptaa nhi kese thank you boluuu par me start krta huu.......<br><br>
-
 Thank you itna achha gift dene ke liye ye meri life ka best gift he.. me isse humesha apne pass sambhal ke rakhungaaaaa<br><br>
-
 Tune itne pyaar se jo banayaaa heee mujhe terii mehnat bohot pasand aayiiii....<br><br>
-
 Mere liye itna sab kuch krne ke liye dher saara thank youuu....👀<br><br>
-
 Usme ek diary bhi hee jisme mere baare me bohot saari achhi achhi baate likhi heee<br>
 Mujhe wo sab padhke bohot achha lagaaaa<br><br>
-
 Ki chalo koi to hai jo mere baare me sochta he nii to merese to sab matlab ke liye hi Jude hue he<br>
 Par sirf tu hi ek haiii jisko mujhse itnaa saara lagaav haiii<br><br>
-
 Me teriii life ka ptaa nhi best part hu kii nhiii<br>
-Par tuu merii lifeee kii wo best pal heeee jisme merii jindgi Puri change krdiii<br><br>
-
+Par tuu merii lifeee kii wo best pal heeee jisne merii jindgi Puri change krdiii<br><br>
 Ye 2 saal tere sath kab nikal gye mujhe ptaa hi ni chala....<br>
 Terii sath ki hui mastiii, majak sab mujhe humesha yaad rahega<br><br>
-
 Tere sath hotaa hu toh me meri life ki saari tension bhul jaata hu<br>
 Tu mera wo comfort zone he jaha aake me kuch bhi kr sakta huuu<br><br>
-
 Tu har jagah he meri life meee<br>
 Subah uthte se raat ko sote tak meko tere notification dekhne ko milte hee<br><br>
-
 Jab bhi tujhe lagega tu isse padhke apne dost ko yaad kr saktiii 💗
-  </p>
+</p>
 
-  <p>
-🗓️ 20 jan 2026 <br>
+<p>
+🗓️ 20 jan 2026 <br><br>
 Aaj mai school nhi gya hu mera english ka paper thaa or me gya ni hu maine sakshi ko bhi late bataya ki mai nhi aa rha huu <br><br>
-
-Pehle bta dena chahiye thaa par chalo koi baat nhii aaj kuch special nhi huaa bass mai papa ke sath bahar gya thaa or subah se is website banane pe hi kaam kr rha huu.... <br>
+Pehle bta dena chahiye thaa par chalo koi baat nhii aaj kuch special nhi huaa bass mai papa ke sath bahar gya thaa or subah se is website banane pe hi kaam kr rha huu.... <br><br>
 Finally itni mehnat or dimaag khapane ke baad maine isse bana liya hee..💁
 </p>
 
 <div class="footer">I'm always here for you.</div>
-
 </div>
 
 </body>
